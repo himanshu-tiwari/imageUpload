@@ -1,0 +1,41 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.container{
+	width: 100%;
+}
+
+.upload-form{
+	text-align: center;
+}
+
+.upload-form__button{
+	display: none;
+}
+
+.uploadcare-widget{
+	width: 100%;
+	margin: 40px 0 20px 0;
+}
+
+.uploadcare-widget-button{
+	padding: 20px 40px;
+	font-weight: 600;
+}
+
+.uploadcare-widget-dragndrop-area{
+	padding: 1em;
+	margin-top: -2.3em;
+	border-radius: 0;
+}
+
+.button{
+	padding: 20px 40px;
+	border: 0;
+	font-size: inherit;
+	font-weight: 600;	
+	background-color: #ccc;
+	color: #777;
+	cursor: pointer;
+}

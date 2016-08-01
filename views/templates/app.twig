@@ -4,6 +4,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Awesome Image</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ app.request.baseUrl }}/../css/app.css">
+
+	<script type="text/javascript">
+ 		UPLOADCARE_LIVE = false;
+ 		UPLOADCARE_IMAGES_ONLY = true;
+ 		UPLOADCARE_CROP = 'free';
+ 	</script>
+ 	{{ app.uploadcare.widget.getScriptTag | raw }}
 </head>
 
 <body>
@@ -11,11 +21,6 @@
  		{% block main %}{% endblock %}
  	</div>
 
- 	<script type="text/javascript">
- 		UPLOADCARE_LIVE = false;
- 		UPLOADCARE_IMAGES_ONLY = true;
- 		UPLOADCARE_CROP = 'free';
- 	</script>
- 	{{ app.uploadcare.widget.getScriptTag | raw }}
+ 	{% block scripts %}{% endblock %}
 </body>
 </html>
