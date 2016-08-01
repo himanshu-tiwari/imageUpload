@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Awesome Image</title>
+</head>
+
+<body>
+ 	<div class="container">
+ 		{% block main %}{% endblock %}
+ 	</div>
+
+ 	<script type="text/javascript">
+ 		UPLOADCARE_LIVE = false;
+ 		UPLOADCARE_IMAGES_ONLY = true;
+ 		UPLOADCARE_CROP = 'free';
+ 	</script>
+ 	{{ app.uploadcare.widget.getScriptTag | raw }}
+</body>
+</html>

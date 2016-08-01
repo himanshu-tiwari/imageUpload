@@ -1,0 +1,7 @@
+{% extends 'templates/app.twig' %}
+
+{% block main %}
+
+	{{ app.uploadcare.widget.getInputTag('file_id') | raw }}
+
+{% endblock %}
