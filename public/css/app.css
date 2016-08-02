@@ -46,7 +46,8 @@ body{
 	justify-content: space-around;
 }
 
-.thumbnails__thumb{
+.thumbnails__thumb,
+.thumbnail{
 	width: 300px;
 	margin: 40px 40px 0 40px;
 	background-color: #fff;
@@ -61,4 +62,13 @@ body{
 
 .thumbnails__thumb:hover{
 	transform: scale(1.1);
+}
+
+.thumbnail{
+	width: auto;
+	height: auto;
+}
+
+.thumbnail__image{
+	max-width: 100%;
 }
