@@ -10,6 +10,16 @@
 		<button type="submit" class="upload-form__button button">Upload</button>
 	</form>
 
+	<div class="thumbnails">
+		{% for image in app['images'] %}
+			<div class="thumbnails__thumb">
+				<a href="#">
+					<img src="{{ app.uploadcare.getfile(image.url).scaleCrop(500,300).op('quality/lightest').op('progressive/yes').getUrl }}" class="thumbnails__thumb-image">
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+
 {% endblock %}
 
 {% block scripts %}

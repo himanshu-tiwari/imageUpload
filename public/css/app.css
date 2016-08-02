@@ -39,3 +39,26 @@ body{
 	color: #777;
 	cursor: pointer;
 }
+
+.thumbnails{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.thumbnails__thumb{
+	width: 300px;
+	margin: 40px 40px 0 40px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 1px 1px 40px rgb(0, 0, 0, 0.1);
+	transition: transform 80ms ease-in;
+}
+
+.thumbnails__thumb-image{
+	width: 100%;
+}
+
+.thumbnails__thumb:hover{
+	transform: scale(1.1);
+}

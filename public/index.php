@@ -32,7 +32,8 @@ $app->get('/', function() use($app){
 	$images->execute();
 
 	$images = $images->fetchAll(\PDO::FETCH_CLASS, \AI\Models\Image::class);
-
+	$app['images'] = $images;
+	
 	return $app['twig']->render('home.twig');
 })->bind('home');
 
